@@ -104,3 +104,14 @@ body {
 .seccion ul li strong {
   color: var(--color-acento);
 }
+
+/* ── Foto de perfil ── */
+.foto-perfil {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin-top: 16px;
+  border-top: 2px solid #4b0082;
+}
