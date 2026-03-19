@@ -1,0 +1,117 @@
+/* ── Variables CSS ── */
+:root {
+  --color-fondo: #f5f5ff;
+  --color-contenedor: #ffffff;
+  --color-texto: #1a1a2e;
+  --color-acento: indigo;
+  --color-borde: indigo;
+  --color-enlace: #4b0082;
+  --color-suave: #ede7f6;
+  --fuente-principal: Georgia, serif;
+  --padding-seccion: 24px;
+}
+
+/* ── Reset básico ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Body ── */
+body {
+  background-color: var(--color-fondo);
+  background-image: linear-gradient(135deg, #f5f5ff 60%, #ddd6f3);
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 40px 20px;
+}
+
+/* ── Contenedor principal ── */
+.contenedor {
+  width: 800px;
+  margin: 0 auto;
+  background-color: var(--color-contenedor);
+  border: 2px solid var(--color-borde);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* ── Encabezado ── */
+.encabezado {
+  padding: var(--padding-seccion) 32px;
+  background-color: indigo;
+  border-bottom: 4px solid #4b0082;
+}
+
+.encabezado h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+/* ── Contacto ── */
+.contacto p {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #e8d5ff;
+}
+
+.contacto a {
+  color: #d4b8ff;
+}
+
+.contacto a:hover {
+  color: #ffffff;
+}
+
+/* ── Secciones ── */
+.seccion {
+  padding: var(--padding-seccion) 32px;
+  border-bottom: 1px solid #e0d7f5;
+}
+
+.seccion:last-child {
+  border-bottom: none;
+}
+
+.seccion h2 {
+  font-size: 1rem;
+  color: indigo;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--color-suave);
+}
+
+/* ── Listas ── */
+.seccion ul {
+  list-style: none;
+  padding: 0;
+}
+
+.seccion ul li {
+  padding: 6px 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--color-borde);
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.seccion ul li strong {
+  color: var(--color-acento);
+}
+
+/* ── Foto de perfil ── */
+.foto-perfil {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin-top: 16px;
+  border-top: 2px solid #4b0082;
+}
